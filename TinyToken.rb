@@ -1,5 +1,5 @@
-#
-#  Class Token - Encapsulates the tokens in TINY
+#	 	Marshall Nelson
+#  	Class Token - Encapsulates the tokens in TINY
 #
 #   @type - the type of token (Category)
 #   @text - the text the token represents (Lexeme)
@@ -14,11 +14,25 @@ class Token
 	LPAREN = "("
 	RPAREN = ")"
 	ADDOP  = "+"
+	SUBOP = "-"
+	MULTOP = "*"
+	DIVOP = "/"
+	EQLS = "="
+	INT = "INT"
+	PRINT = "print"
+	ID = "ID"
 	WS = "whitespace"
-    UNKWN = "unknown"
+	UNKWN = "unknown"
 
+# with boolean
+	GRTR = ">"
+	LESS = "<"
+	AND = "&"
+	WLOOP = "while"
+	FLOOP = "for"
 # add the rest of the tokens needed based on the grammar
 # specified in the Scanner class "TinyScanner.rb"
+
 
 #constructor
 	def initialize(type,text)
